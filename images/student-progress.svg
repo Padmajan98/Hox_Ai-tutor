@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">Student Progress</title>
+  <desc id="desc">A stylized dashboard chart showing upward progress.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1f5a70"/>
+      <stop offset="100%" stop-color="#1f3f52"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ed8771"/>
+      <stop offset="100%" stop-color="#f2b29f"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" rx="28" fill="url(#bg)"/>
+  <circle cx="98" cy="86" r="26" fill="#9bc8dc"/>
+  <rect x="140" y="64" width="220" height="14" rx="7" fill="#d8e9f1" opacity="0.86"/>
+  <rect x="140" y="90" width="170" height="10" rx="5" fill="#b7d5e3" opacity="0.76"/>
+  <g opacity="0.34" stroke="#c7e0eb">
+    <path d="M70 286H574"/>
+    <path d="M70 248H574"/>
+    <path d="M70 210H574"/>
+    <path d="M70 172H574"/>
+  </g>
+  <path d="M88 272L168 242L238 250L318 210L390 188L470 146L548 112" fill="none" stroke="url(#line)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="318" cy="210" r="8" fill="#ed8771"/>
+  <circle cx="470" cy="146" r="8" fill="#ed8771"/>
+  <circle cx="548" cy="112" r="10" fill="#f09a82"/>
+</svg>
