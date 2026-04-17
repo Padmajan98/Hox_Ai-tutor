@@ -20,9 +20,13 @@
 </head>
 
 <body>
+  <div class="cinematic-intro">
+    <div class="intro-streak"></div>
+    <div class="intro-logo">AiTutor</div>
+  </div>
   <div class="page-bg"></div>
 
-  <header class="site-header" id="top">
+  <header class="site-header cinematic-nav" id="top">
     <div class="container header-inner">
       <a href="#top" class="logo">AiTutor</a>
       <nav class="main-nav" aria-label="Primary Navigation">
@@ -40,16 +44,16 @@
   <main>
     <section class="hero section" id="demo">
       <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">Future-Ready Education Platform</p>
-          <h1>AI Tutor — AI-Powered Personalized Learning for the Next Generation</h1>
-          <p class="subhead">Transforming schools into intelligent, data-driven learning ecosystems through adaptive learning, real-time analytics, and automation.</p>
-          <div class="hero-cta">
+        <div class="hero-copy cinematic-text">
+          <p class="eyebrow cinematic-item">Future-Ready Education Platform</p>
+          <h1 class="cinematic-item">AI Tutor — AI-Powered Personalized Learning for the Next Generation</h1>
+          <p class="subhead cinematic-item">Transforming schools into intelligent, data-driven learning ecosystems through adaptive learning, real-time analytics, and automation.</p>
+          <div class="hero-cta cinematic-item">
             <a href="#contact" class="btn btn-coral">Request Demo</a>
             <a href="#features" class="btn btn-outline">Explore Features</a>
           </div>
         </div>
-        <div class="hero-visual">
+        <div class="hero-visual cinematic-visual">
           <div class="phone-glow"></div>
           <div class="phone-carousel" aria-label="App screens carousel">
             <button class="carousel-btn prev" aria-label="Previous screen">&lsaquo;</button>
@@ -62,13 +66,20 @@
             <button class="carousel-btn next" aria-label="Next screen">&rsaquo;</button>
           </div>
           <div class="screen-dots" aria-hidden="true"></div>
+          <div class="particles" aria-hidden="true">
+            <div class="p1"></div>
+            <div class="p2"></div>
+            <div class="p3"></div>
+            <div class="p4"></div>
+            <div class="p5"></div>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="section about" id="schools">
       <div class="container about-grid">
-        <article class="glass-card about-copy">
+        <article class="glass-card about-copy reveal">
           <h2>What is AI Tutor?</h2>
           <p>AI Tutor is a next-generation AI-driven academic intelligence platform built to modernize how schools deliver education.</p>
           <p>Unlike traditional learning systems that follow a fixed curriculum approach, AI Tutor uses intelligent adaptive algorithms to understand how each student learns, where they struggle, and how they can improve.</p>
@@ -82,7 +93,7 @@
           </ul>
           <p>The platform integrates AI analytics, automated assessments, smart notifications, and predictive performance modeling to help institutions move from reactive teaching to proactive learning.</p>
         </article>
-        <aside class="glass-card dashboard-preview" aria-label="Dashboard preview mockup">
+        <aside class="glass-card dashboard-preview reveal-right delay-200" aria-label="Dashboard preview mockup">
           <h3>Academic Intelligence Dashboard</h3>
           <div class="dash-stats">
             <div><strong>92%</strong><span>Adaptive Accuracy</span></div>
@@ -142,7 +153,7 @@
       </div>
     </section>
 
-    <section class="section vision">
+    <section class="section vision reveal-scale">
       <div class="container">
         <h2>Our Vision</h2>
         <p class="vision-text">To provide every student with a personalized academic journey while empowering educators with intelligent control, automation, and predictive insights.</p>
@@ -154,7 +165,7 @@
       <div class="container">
         <h2>Key Features</h2>
         <div class="feature-grid">
-          <article class="glass-card feature-card">
+          <article class="glass-card feature-card reveal delay-100">
             <h3><span class="feature-ico">&#10024;</span> Personalized Learning Engine</h3>
             <ul>
               <li>AI analyzes student performance in real-time</li>
@@ -163,7 +174,7 @@
               <li>Smart revision recommendations</li>
             </ul>
           </article>
-          <article class="glass-card feature-card">
+          <article class="glass-card feature-card reveal delay-200">
             <h3><span class="feature-ico">&#128200;</span> Performance Analytics Dashboard</h3>
             <ul>
               <li>Student-wise tracking</li>
@@ -172,7 +183,7 @@
               <li>AI improvement suggestions</li>
             </ul>
           </article>
-          <article class="glass-card feature-card">
+          <article class="glass-card feature-card reveal delay-300">
             <h3><span class="feature-ico">&#127979;</span> Teacher Control Panel</h3>
             <ul>
               <li>Exam creation and scheduling</li>
@@ -181,7 +192,7 @@
               <li>Question bank management</li>
             </ul>
           </article>
-          <article class="glass-card feature-card">
+          <article class="glass-card feature-card reveal delay-400">
             <h3><span class="feature-ico">&#128106;</span> Parent Visibility</h3>
             <ul>
               <li>Real-time reports</li>
@@ -189,7 +200,7 @@
               <li>Engagement monitoring</li>
             </ul>
           </article>
-          <article class="glass-card feature-card">
+          <article class="glass-card feature-card reveal delay-500">
             <h3><span class="feature-ico">&#128276;</span> Smart Notifications</h3>
             <ul>
               <li>Exam reminders</li>
@@ -205,11 +216,11 @@
       <div class="container">
         <h2>The Education Gap</h2>
         <div class="problem-grid minimal-grid">
-          <article class="glass-card issue"><span>&#127919;</span><p>One-size-fits-all teaching</p></article>
-          <article class="glass-card issue"><span>&#9200;</span><p>Late identification of weaknesses</p></article>
-          <article class="glass-card issue"><span>&#128202;</span><p>Lack of actionable academic data</p></article>
-          <article class="glass-card issue"><span>&#129309;</span><p>Poor parent engagement</p></article>
-          <article class="glass-card issue"><span>&#9881;</span><p>Manual tracking inefficiencies</p></article>
+          <article class="glass-card issue reveal delay-100"><span>&#127919;</span><p>One-size-fits-all teaching</p></article>
+          <article class="glass-card issue reveal delay-200"><span>&#9200;</span><p>Late identification of weaknesses</p></article>
+          <article class="glass-card issue reveal delay-300"><span>&#128202;</span><p>Lack of actionable academic data</p></article>
+          <article class="glass-card issue reveal delay-400"><span>&#129309;</span><p>Poor parent engagement</p></article>
+          <article class="glass-card issue reveal delay-500"><span>&#9881;</span><p>Manual tracking inefficiencies</p></article>
         </div>
       </div>
     </section>
@@ -218,7 +229,7 @@
       <div class="container">
         <h2>Built for Scale. Designed for Intelligence.</h2>
         <p class="section-intro">AI Tutor is powered by:</p>
-        <div class="trust-grid glass-card">
+        <div class="trust-grid glass-card reveal">
           <p>Adaptive machine learning algorithms</p>
           <p>Cloud-based scalable infrastructure</p>
           <p>Secure data architecture</p>
@@ -233,23 +244,23 @@
       <div class="container">
         <h2>Flexible Deployment Models</h2>
         <div class="pricing-grid">
-          <article class="glass-card price-card">
+          <article class="glass-card price-card reveal delay-100">
             <h3>Subscription Model</h3>
             <p class="price">Per student / per institution plans with recurring billing.</p>
             <a href="https://wa.me/9995550353?text=Hi%20AiTutor%2C%20I%20want%20to%20know%20more%20about%20your%20pricing." class="btn btn-coral" target="_blank" rel="noopener noreferrer">Talk to Sales</a>
           </article>
-          <article class="glass-card price-card recommended">
+          <article class="glass-card price-card recommended reveal-scale delay-200">
             <h3>White-Label + Add-ons</h3>
             <p class="price">Custom branding, add-on AI modules, and advanced analytics stack.</p>
             <a href="https://wa.me/9995550353?text=Hi%20AiTutor%2C%20I%20want%20to%20know%20more%20about%20your%20pricing." class="btn btn-coral" target="_blank" rel="noopener noreferrer">Talk to Sales</a>
           </article>
-          <article class="glass-card price-card">
+          <article class="glass-card price-card reveal delay-300">
             <h3>Enterprise Deployment</h3>
             <p class="price">Enterprise custom deployments with deep integration support.</p>
             <a href="https://wa.me/9995550353?text=Hi%20AiTutor%2C%20I%20want%20to%20know%20more%20about%20your%20pricing." class="btn btn-coral" target="_blank" rel="noopener noreferrer">Talk to Sales</a>
           </article>
         </div>
-        <article class="glass-card school-sales-card">
+        <article class="glass-card school-sales-card reveal">
           <div class="school-sales-head">
             <h3>Built to Win School Deals</h3>
             <p>A complete school sales playbook focused on principals, academic heads, and management teams.</p>
@@ -274,16 +285,16 @@
       <div class="container">
         <h2>Future Roadmap</h2>
         <div class="timeline">
-          <div class="milestone glass-card">AI-based doubt solving assistant</div>
-          <div class="milestone glass-card">Voice-enabled tutoring</div>
-          <div class="milestone glass-card">Predictive exam readiness score</div>
-          <div class="milestone glass-card">School ERP integrations</div>
+          <div class="milestone glass-card reveal delay-100">AI-based doubt solving assistant</div>
+          <div class="milestone glass-card reveal delay-200">Voice-enabled tutoring</div>
+          <div class="milestone glass-card reveal delay-300">Predictive exam readiness score</div>
+          <div class="milestone glass-card reveal delay-400">School ERP integrations</div>
         </div>
       </div>
     </section>
 
     <section class="section final-cta" id="contact">
-      <div class="container glass-card cta-wrap">
+      <div class="container glass-card cta-wrap reveal-scale">
         <h2>Ready to transform learning in your institution?</h2>
         <div class="hero-cta">
           <a href="https://wa.me/9995550353?text=Hi%20AiTutor%2C%20I%20want%20to%20request%20a%20live%20demo." class="btn btn-coral" target="_blank" rel="noopener noreferrer">Request a Live Demo</a>
@@ -318,7 +329,7 @@
             <h4>School Sales Desk</h4>
             <p>Pitching to schools? We help you close faster with ROI-first positioning and pilot rollout support.</p>
             <div class="footer-meta">
-              <a href="mailto:sales@aitutor.example">sales@aitutor.example</a>
+              <a href="mailto:contact@hoxinfotech.com">contact@hoxinfotech.com</a>
               <a href="tel:+9995550353">9995550353</a>
             </div>
             <a href="https://wa.me/9995550353?text=Hi%20AiTutor%2C%20I%20want%20a%20school%20sales%20demo." class="btn btn-coral footer-demo-btn" target="_blank" rel="noopener noreferrer">Book Demo</a>

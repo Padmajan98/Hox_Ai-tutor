@@ -171,7 +171,7 @@ const screens = [
     className: "app-screen app-screen-chat",
     content: `
       <div class="app-status"><span>9:41</span><span class="status-icons">||| ))) ?</span></div>
-      <div class="chat-avatar"><img src="images/tutor-portrait.png" alt="AI tutor portrait" /></div>
+      <div class="chat-avatar"><img src="images/tutor-portrait.png" alt="AI tutor portrait" onerror="this.onerror=null;this.src='tutor-portrait.png';" /></div>
       <div class="chat-header">Let's talk! Answer in your own words or type it out...</div>
       <div class="chat-bubble bot">Hey Laila! What's up today? Got anything exciting you want to explore?</div>
       <div class="chat-bubble user">I was wondering how to solve word problems in algebra.</div>
@@ -186,7 +186,7 @@ const screens = [
       <div class="app-title">My Profile</div>
       <div class="profile-card">
         <div class="profile-pic">
-          <img src="images/tutor-portrait.png" alt="Laila Jerome profile photo" />
+          <img src="images/tutor-portrait.png" alt="Laila Jerome profile photo" onerror="this.onerror=null;this.src='tutor-portrait.png';" />
         </div>
         <strong>Laila Jerome</strong>
         <p>lailajerome123@gmail.com</p>
@@ -315,9 +315,8 @@ if (waTopBtn) {
   });
 }
 
-const revealSections = document.querySelectorAll(".section");
+const revealElements = document.querySelectorAll(".reveal, .reveal-left, .reveal-right, .reveal-scale");
 if ("IntersectionObserver" in window) {
-  revealSections.forEach((section) => section.classList.add("reveal"));
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
@@ -327,9 +326,9 @@ if ("IntersectionObserver" in window) {
         }
       });
     },
-    { threshold: 0.14, rootMargin: "0px 0px -30px 0px" }
+    { threshold: 0.1, rootMargin: "0px 0px -50px 0px" }
   );
-  revealSections.forEach((section) => observer.observe(section));
+  revealElements.forEach((el) => observer.observe(el));
 } else {
-  revealSections.forEach((section) => section.classList.add("in-view"));
+  revealElements.forEach((el) => el.classList.add("in-view"));
 }
