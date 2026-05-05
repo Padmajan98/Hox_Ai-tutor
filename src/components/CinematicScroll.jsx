@@ -1,3 +1,4 @@
+
 import { useEffect, useRef, useState } from "react";
 
 const FRAME_COUNT = 180;
@@ -22,14 +23,14 @@ export default function CinematicScroll() {
       const viewHeight = window.innerHeight;
       const maxScroll = rect.height - viewHeight;
       let progress = 0;
-      
+
       if (rect.top <= 0) {
         progress = Math.abs(rect.top) / maxScroll;
       }
-      
+
       progress = Math.min(Math.max(progress, 0), 1);
       const frame = Math.round(1 + progress * (FRAME_COUNT - 1));
-      
+
       setCurrentFrame(frame);
 
       // Preload
@@ -51,10 +52,10 @@ export default function CinematicScroll() {
     <section className="cinematic-scroll-section" id="walkthrough" ref={sectionRef}>
       <div className="scroll-sticky-container">
         <div className="scroll-canvas-wrapper">
-          <img 
-            className="frame-scroll-image blend-screen" 
-            src={getFrameSrc(currentFrame)} 
-            alt={`Hox Ai Tutor walkthrough frame ${currentFrame}`} 
+          <img
+            className="frame-scroll-image blend-screen"
+            src={getFrameSrc(currentFrame)}
+            alt={`Hox Ai Tutor walkthrough frame ${currentFrame}`}
           />
         </div>
 

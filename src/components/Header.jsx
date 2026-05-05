@@ -6,7 +6,10 @@ export default function Header() {
   return (
     <header className="site-header cinematic-nav" id="top">
       <div className="container header-inner">
-        <a href="#top" className="logo">Hox Ai Tutor</a>
+        <a href="#top" className="logo" style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+          <img src="/favicon.png" alt="Hox Ai Tutor Logo" width="28" height="28" style={{ objectFit: "contain" }} />
+          Hox Ai Tutor
+        </a>
         <nav className={`main-nav ${isOpen ? "open" : ""}`} aria-label="Primary Navigation">
           <a href="#features" onClick={() => setIsOpen(false)}>Features</a>
           <a href="#schools" onClick={() => setIsOpen(false)}>For Schools</a>
