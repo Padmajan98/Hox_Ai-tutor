@@ -259,6 +259,13 @@ p {
   perspective: 1400px;
 }
 
+.hero-image {
+  width: min(330px, 70vw);
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 28px 38px rgba(0, 0, 0, 0.45));
+}
+
 .phone-glow {
   position: absolute;
   width: 340px;
