@@ -15,6 +15,7 @@ import WhatsAppWidget from "./components/WhatsAppWidget";
 
 function App() {
   const videoRef = useRef(null);
+  const baseUrl = import.meta.env.BASE_URL;
 
   useEffect(() => {
     const video = videoRef.current;
@@ -86,7 +87,7 @@ function App() {
       <video 
         ref={videoRef}
         className="app-bg-video" 
-        src="/videos/mp.mp4" 
+        src={`${baseUrl}videos/mp.mp4`} 
         muted 
         playsInline 
       ></video>

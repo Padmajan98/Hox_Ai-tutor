@@ -2,7 +2,7 @@
 import { useEffect, useRef, useState } from "react";
 
 const FRAME_COUNT = 180;
-const FRAME_DIR = "images/frames scroll";
+const FRAME_DIR = `${import.meta.env.BASE_URL}images/frames scroll`;
 
 export default function CinematicScroll() {
   const sectionRef = useRef(null);

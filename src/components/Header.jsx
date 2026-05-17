@@ -2,12 +2,19 @@ import { useState } from "react";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const baseUrl = import.meta.env.BASE_URL;
 
   return (
     <header className="site-header cinematic-nav" id="top">
       <div className="container header-inner">
         <a href="#top" className="logo" style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-          <img src="/favicon.png" alt="Hox Ai Tutor Logo" width="28" height="28" style={{ objectFit: "contain" }} />
+          <img
+            src={`${baseUrl}favicon.png`}
+            alt="Hox Ai Tutor Logo"
+            width="28"
+            height="28"
+            style={{ objectFit: "contain" }}
+          />
           Hox Ai Tutor
         </a>
         <nav className={`main-nav ${isOpen ? "open" : ""}`} aria-label="Primary Navigation">
