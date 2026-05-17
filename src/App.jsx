@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 
@@ -14,43 +14,7 @@ import Footer from "./components/Footer";
 import WhatsAppWidget from "./components/WhatsAppWidget";
 
 function App() {
-  const videoRef = useRef(null);
   const baseUrl = import.meta.env.BASE_URL;
-
-  useEffect(() => {
-    const video = videoRef.current;
-    if (!video) return;
-
-    let rafId;
-
-    const handleScroll = () => {
-      if (rafId) cancelAnimationFrame(rafId);
-      
-      rafId = requestAnimationFrame(() => {
-        if (!video.duration || Number.isNaN(video.duration)) return;
-        
-        const scrollableHeight = document.documentElement.scrollHeight - window.innerHeight;
-        if (scrollableHeight <= 0) return;
-        
-        const scrollProgress = Math.max(0, Math.min(1, window.scrollY / scrollableHeight));
-        const targetTime = scrollProgress * (video.duration * 0.999);
-        video.currentTime = targetTime;
-      });
-    };
-
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    
-    const handleLoadedMetadata = () => {
-      handleScroll();
-    };
-    video.addEventListener("loadedmetadata", handleLoadedMetadata);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-      video.removeEventListener("loadedmetadata", handleLoadedMetadata);
-      if (rafId) cancelAnimationFrame(rafId);
-    };
-  }, []);
 
   useEffect(() => {
     const revealElements = document.querySelectorAll(
@@ -85,9 +49,10 @@ function App() {
         <div className="intro-logo">Hox Ai Tutor</div>
       </div>
       <video 
-        ref={videoRef}
         className="app-bg-video" 
         src={`${baseUrl}videos/mp.mp4`} 
+        autoPlay
+        loop
         muted 
         playsInline 
       ></video>
